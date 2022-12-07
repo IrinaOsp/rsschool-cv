@@ -25,6 +25,6 @@ I have not work experience in Front-end yet
 	
 ## Languages:
 * Russian: native
-* English: C1 (certificate IELTS 7.0, exam passed in December 2020)
+* English: C1 (certificate IELTS 7.0, December 2020 exam)
 * Spanish: basic
 * Polish: basic
