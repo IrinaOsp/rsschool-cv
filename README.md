@@ -1,2 +1,3 @@
-## https://IrinaOsp.github.io/rsschool-cv/cv
-## https://IrinaOsp.github.io/rsschool-cv/
+# rsschool-cv
+
+[link to cv](https://github.com/IrinaOsp/rsschool-cv/)

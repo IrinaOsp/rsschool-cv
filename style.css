@@ -1,1 +1,131 @@
+@font-face {
+ font-family: Roboto;
+  src: url("assets/fonts/Roboto.ttf");
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+}
+
+.header {
+    background-color: #4682B4;
+    padding: 10px;
+}
+
+main {
+    padding-bottom: 30px;
+    width: 100%;
+}
+.profile-container{
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    padding: 20px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+
+    margin: auto;
+}
+
+aside {
+    display: block;
+    width: 30%;
+    padding: 20px 20px 20px 40px;
+    background-color: #ADD8E6;
+}
+
+.main-container {
+    width: 70%;
+    padding: 20px 20px 20px 50px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #000080;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000080;
+}
+
+.footer {
+    background-color: #4682B4;
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+pre {
+    font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+  color: #829985;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: #5d7260;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: .3s;
+  color: black;
+}
+
+.section-profile-logo {
+  width: 100px;
+}
+
 
