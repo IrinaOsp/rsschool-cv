@@ -18,3 +18,25 @@ I completed the Russian version of the JS/Frontend course in September and appli
 - Postman
 - basic knowledge of React
 
+## Code example
+
+```
+function validateDateOfBirth(inputDate) {
+    const userDate = new Date(inputDate);
+    const currentDate = new Date();
+
+    const userAge = currentDate.getFullYear() - userDate.getFullYear();
+    const isValidAge = userAge >= 18 && userAge <= 120;
+    return isValidAge;
+}
+
+// Usage example
+const inputDate = "1990-05-15";
+const isDateValid = validateDateOfBirth(inputDate);
+
+if (isDateValid) {
+    console.log("Birth date is valid");
+} else {
+    console.log("Invalid date of birth or age is outside the acceptable range.");
+}
+```
