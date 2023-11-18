@@ -1,10 +1,10 @@
-# Irina Osipova
+# :woman_technologist: Irina Osipova
 ## Contact Info
-Telegram: [osipova_ira](https://t.me/osipova_ira)
+:iphone: Telegram: [osipova_ira](https://t.me/osipova_ira)
 
-GitHub: [github.com/IrinaOsp](https://github.com/IrinaOsp)
+:octocat: GitHub: [github.com/IrinaOsp](https://github.com/IrinaOsp)
 
-Email: [osipova_irina@hotmail.com](mailto:osipova_irina@hotmail.com)
+:e-mail: Email: [osipova_irina@hotmail.com](mailto:osipova_irina@hotmail.com)
 
 ## Summary
 I completed the Russian version of the JS/Frontend course in September and applied for the English version to improve my skills, close knowledge gaps, gain experience in English interviews, and add a couple of new projects to my portfolio.
@@ -40,3 +40,17 @@ if (isDateValid) {
     console.log("Invalid date of birth or age is outside the acceptable range.");
 }
 ```
+
+## Experience
+
+My portfolio on github: [IrinaOsp/portfolio](https://github.com/IrinaOsp/portfolio)
+
+## Education (including courses, seminars, lectures, online learning)
+:heavy_check_mark: JS/FE Pre-School 2022Q4
+
+:heavy_check_mark: JavaScript/Front-end 2023Q1
+
+:woman_student: React 2023 Q4 (not yet completed)
+
+## English
+I successfully passed the IELTS exam in 2020 and achieved an overall score of 7.0. However, I have not had much practice since then and am currently making efforts to regain the proficiency level I had before. To achieve this, I am actively engaging in language practice, including reading, writing, and conversation.
