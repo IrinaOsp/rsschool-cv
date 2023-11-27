@@ -33,6 +33,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .header {
   display: flex;
@@ -53,4 +57,10 @@ html {
 .nav-item * {
   color: black;
   text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
