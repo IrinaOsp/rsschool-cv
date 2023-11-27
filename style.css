@@ -17,6 +17,7 @@
 :root {
   font-size: 16px;
   --text-color: #fff;
+  --secondary-color: #cbee1b;
 }
 
 html,
@@ -66,6 +67,21 @@ h3 {
   color: var(--text-color);
 }
 
+h2 {
+  display: inline;
+  width: fit-content;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+p {
+  letter-spacing: 2px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
 body {
   background-color: #151616;
   color: var(--text-color);
@@ -76,7 +92,7 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: transparent;
+  background-color: rgba(23, 23, 23, 0.6);
   display: flex;
   justify-content: flex-end;
   padding: 0 6rem;
@@ -98,6 +114,10 @@ body {
 
 .nav-item * {
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.nav-item:hover {
+  transform: scale(1.2);
 }
 
 .section {
@@ -118,13 +138,95 @@ body {
   justify-content: center;
 }
 
+#home .container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-info,
+.home-img {
+  display: inline-block;
+  max-width: 50%;
+}
+
+.home-info h1 {
+  font-size: 3.7rem;
+}
+
+.home-info h3 {
+  font-size: 3rem;
+}
+
+.home-img {
+  margin-left: 3rem;
+  border-radius: 10px;
+}
+
+.home-img * {
+  border-radius: 10px;
+  border-bottom: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+}
+
 .tech-container {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4rem 3rem;
+  margin-top: 5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+  border-bottom: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--secondary-color);
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem 3rem;
+}
+
+.project {
+  overflow: hidden;
+}
+
+.project iframe {
+  /* object-fit: scale-down; */
+  width: 100%;
+  height: 100%;
+  border: none;
+  transform-origin: top left;
+  overflow: hidden;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer a {
+  transition: transform 0.3s ease;
+}
+.footer a:hover {
+  transform: scale(1.2);
+}
+
+.footer .container {
+  flex-direction: row;
+  align-items: center;
+  gap: 10rem;
+  padding: 1rem;
+}
+
+.footer-school-logo {
+  filter: invert(100%);
 }
