@@ -59,6 +59,11 @@ a {
   text-decoration: none;
 }
 
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
