@@ -1,0 +1,56 @@
+html,
+body,
+div,
+span,
+a,
+p,
+img,
+section,
+aside,
+footer,
+header,
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6rem;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-item * {
+  color: black;
+  text-decoration: none;
+}
