@@ -168,6 +168,14 @@ body {
   border-right: 3px solid var(--secondary-color);
 }
 
+#about {
+  height: 70vh;
+}
+
+#about p {
+  margin-bottom: 3rem;
+}
+
 .tech-container {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -188,23 +196,80 @@ body {
   border-right: 2px solid var(--secondary-color);
 }
 
+.tech-item__github {
+  filter: invert(100%);
+}
+
+#projects {
+  height: fit-content;
+  margin-bottom: 8rem;
+}
+
 .projects-wrapper {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 4rem 3rem;
 }
 
-.project {
-  overflow: hidden;
-}
-
 .project iframe {
-  /* object-fit: scale-down; */
   width: 100%;
   height: 100%;
   border: none;
   transform-origin: top left;
   overflow: hidden;
+}
+
+.project-info {
+  display: flex;
+}
+
+.project-info a {
+  width: 50%;
+  height: 100%;
+  background-color: #3b3a3a;
+  color: var(--text-color);
+  text-align: center;
+  padding: 5px 0;
+}
+
+.education-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-item span:nth-child(2) {
+  font-size: larger;
+  font-weight: 700;
+}
+
+#education h3 {
+  font-size: 1.7rem;
+  display: inline;
+  width: fit-content;
+  line-height: 1.5;
+  font-weight: 700;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.languages-list li {
+  list-style: none;
+  line-height: 2rem;
+}
+
+#contacts {
+  height: 50vh;
+}
+
+#contacts li {
+  list-style: none;
+  line-height: 2rem;
 }
 
 .footer {
