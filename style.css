@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "Oxygen", sans-serif;
+  src: url(./assets/fonts/Oxygen-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Oxygen", sans-serif;
+  src: url(./assets/fonts/Oxygen-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Oxygen", sans-serif;
+  src: url(./assets/fonts/Oxygen-Bold.ttf);
+  font-weight: 700;
+}
+
+:root {
+  font-size: 16px;
+  --text-color: #fff;
+  --secondary-color: #cbee1b;
+}
+
+html,
+body,
+div,
+span,
+a,
+p,
+img,
+section,
+aside,
+footer,
+header,
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+
+h2 {
+  display: inline;
+  width: fit-content;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+p {
+  letter-spacing: 2px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+body {
+  background-color: #151616;
+  color: var(--text-color);
+  font-family: "Oxygen", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(23, 23, 23, 0.6);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 6rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-menu {
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-item * {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+
+#home {
+  display: flex;
+  padding-top: 10rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home .container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-info,
+.home-img {
+  display: inline-block;
+  max-width: 50%;
+}
+
+.home-info h1 {
+  font-size: 3.7rem;
+}
+
+.home-info h3 {
+  font-size: 3rem;
+}
+
+.home-img {
+  margin-left: 3rem;
+  border-radius: 10px;
+}
+
+.home-img * {
+  border-radius: 10px;
+  border-bottom: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+}
+
+#about {
+  height: 70vh;
+}
+
+#about p {
+  margin-bottom: 3rem;
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4rem 3rem;
+  margin-top: 5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+  border-bottom: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--secondary-color);
+}
+
+.tech-item__github {
+  filter: invert(100%);
+}
+
+#projects {
+  height: fit-content;
+  margin-bottom: 8rem;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem 3rem;
+}
+
+.project iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.project-info {
+  display: flex;
+}
+
+.project-info a {
+  width: 50%;
+  height: 100%;
+  background-color: #3b3a3a;
+  color: var(--text-color);
+  text-align: center;
+  padding: 5px 0;
+}
+
+.education-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-item span:nth-child(2) {
+  font-size: larger;
+  font-weight: 700;
+}
+
+#education h3 {
+  font-size: 1.7rem;
+  display: inline;
+  width: fit-content;
+  line-height: 1.5;
+  font-weight: 700;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.languages-list li {
+  list-style: none;
+  line-height: 2rem;
+}
+
+#contacts {
+  height: 50vh;
+}
+
+#contacts li {
+  list-style: none;
+  line-height: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  transition: transform 0.3s ease;
+}
+.footer a:hover {
+  transform: scale(1.2);
+}
+
+.footer .container {
+  flex-direction: row;
+  align-items: center;
+  gap: 10rem;
+  padding: 1rem;
+}
+
+.footer-school-logo {
+  filter: invert(100%);
+}
