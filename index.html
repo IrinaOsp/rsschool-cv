@@ -28,6 +28,9 @@
             <a href="#projects">Projects</a>
           </li>
           <li class="nav-item">
+            <a href="#code">Code example</a>
+          </li>
+          <li class="nav-item">
             <a href="#education">Education</a>
           </li>
           <li class="nav-item">
@@ -240,6 +243,39 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="code">
+        <div class="container">
+          <h2>Code example</h2>
+          <pre>
+
+            <code
+              >
+              
+            function validateDateOfBirth(inputDate) {
+                const userDate = new Date(inputDate);
+                const currentDate = new Date();
+            
+                const userAge = currentDate.getFullYear() - userDate.getFullYear();
+                const isValidAge = userAge >= 18 && userAge &lt;= 120;
+                return isValidAge;
+            }
+            
+            // Usage example
+            const inputDate = "1990-05-15";
+            const isDateValid = validateDateOfBirth(inputDate);
+            
+            if (isDateValid) {
+                console.log("Birth date is valid");
+            } else {
+                console.log("Invalid date of birth or age is outside the acceptable range.");
+            }
+              
+              </code
+            >
+          </pre>
         </div>
       </section>
 
